@@ -80,36 +80,3 @@ main {
 .contact-info i {
     margin-right: 5px;
 }
-
-.contact-form {
-    margin-bottom: 20px;
-}
-
-.contact-form form {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-}
-
-.contact-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
