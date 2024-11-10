@@ -2,36 +2,39 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; 
 }
 
 header {
     background-color: #f0f0f0;
     padding: 20px;
-    text-align: center;
 }
 
 nav {
-    background-color: #333;
-    color: #fff;
+    background-color: #f0f0f0;
+    color: #333;
     padding: 10px;
-    text-align: center;
+    display: inline-block; /* Изменение: Inline-block */
+    width: 200px; /* Устанавливаем ширину */
+    vertical-align: top; /* Выравниваем по верху */
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    list-style-type: disc;
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 10px;
+    margin-bottom: 10px;
 }
 
 main {
+    display: inline-block; /* Изменение: Inline-block */
+    vertical-align: top; /* Выравниваем по верху */
     padding: 20px;
 }
-
 .portfolio-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -80,8 +83,12 @@ main {
 .contact-info i {
     margin-right: 5px;
 }
-.responsive-image{
-	float: left; 
-    margin: 0 0 5px 10px; 
-	width:110px;
+.responsive-image {
+    width: 50px; 
+    height: auto; 
+    margin: 10px;
+}
+.logo{
+    width: 200px;
+    height: auto;
 }
