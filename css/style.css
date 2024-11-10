@@ -80,3 +80,12 @@ main {
 .contact-info i {
     margin-right: 5px;
 }
+.responsive-image{
+    margin-bottom: 20px;
+	display: block; /* Занимает всю ширину родительского элемента */
+    margin: 0 auto; /* Выравнивание по центру */
+    max-width: 400px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота изображения */
+    border: 3px solid #0000ff; /* Добавляем красную рамку */
+    border-radius: 5px; /* Добавляем скругленные углы */ 
+}
