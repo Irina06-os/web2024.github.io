@@ -83,11 +83,19 @@ main {
 .contact-info i {
     margin-right: 5px;
 }
-.responsive-image {
-    width: 50px; 
-    height: auto; 
-    margin: 10px;
-}
+.social-links {
+    text-align: left; /* Выравнивание по центру */
+    margin-top: 20px; /* Отступ сверху */
+  }
+  
+.social-links a {
+    display: inline-block; /* Размещение иконок рядом */
+    margin: 0 10px; /* Отступ между иконками */
+  }
+.social-links img {
+    width: 60px; /* Ширина иконок */
+    height: auto; /* Автоматическая высота */
+  }
 .logo{
     width: 200px;
     height: auto;
