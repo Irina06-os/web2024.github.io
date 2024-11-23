@@ -5,37 +5,68 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="images/lg!s8w.jpg" alt="Логотип" class="logo"></a></li>
-                <li><a href="index.html">О себе</a></li>
-                <li><a href="summary.html">Резюме</a></li>
-                <li><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="index.html#skills">Компетенции</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+    <nav>
+        <div class="navbar">  <!-- Обёртка для Flexbox -->
+            <a href="index.html" class="nav-flex-item nav-flex-item-logo">
+                <img src="images/lg!s8w.png" alt="Логотип" class="logo">
+            </a>
+            <ul class="nav-flex-items">
+                <li class="nav-flex-item"><a href="index.html">О себе</a></li>
+                <li class="nav-flex-item"><a href="summary.html">Резюме</a></li>
+                <li class="nav-flex-item"><a href="portfolio.html">Портфолио</a></li>
+                <li class="nav-flex-item"><a href="index.html#skills">Компетенции</a></li>
+                <li class="nav-flex-item"><a href="contacts.html">Контакты</a></li>
             </ul>
-        </nav>
-        <h1>Персональный сайт Имя Фамилия | Веб-технологии</h1>
+        </div>
+    </nav>
+    <header>
+        <h1 class="header-title">Веб-технологии</h1>
+        <h3 class="header-title">Осипова Ирина Валерьевна</h3>
     </header>
 
-    <main>
-        <h2>Добро пожаловать на мой сайт!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
-        <p>Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <h3 id="skills">Мои компетенции</h3>
-        <p>Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-    </main>
 
-    <footer>
-        
+    <div class="wrapper">
+        <section class="about-me">
+            <h1>О себе</h1>
+            <p>Пивет, меня зовут Ирина, я студент 2 курса бакалавариат учусь по направлению Бизнес-информатика в Университете Дубна.
+
+            </p>
+
+        </section>
+    </div>   
+    <div class="block-container dark-bg">
+        <section class="skills"><h1>Мои компетенции</h1></section>
+    </div>
+    <div class="wrapper">
+      <article class="services">
+        <h2>Услуги</h2>
+        <section class="list">
+            <div class="list1">
+                <h3>Название проекта 1</h3>
+                <p>Создала веб-сайт для компании "Название компании". Сайт выполнен на основе HTML, CSS, JavaScript, React.js.  Достигнут результат: увеличение конверсии на 15%.</p>
+            </div>
+
+            <div class="list1">
+                <h3>Название проекта 2</h3>
+                <p>Разработала веб-приложение для платформы "Название платформы".  Применяла технологии: Node.js, Express.js, MongoDB. Достигнут результат: увеличение производительности на 20%.</p>
+            </div>
+        </section>
+</div>
+    <div class="block-container dark-bg2">
+        <section class="portfolio"><h1>Заголовок</h1></section>
+        <form action="portfolio.html">  <!-- Замените на фактический путь к вашему портфолио -->
+            <button class="btn">Портфолио</button>
+          </form>
+    </div>
+        <footer class="flex-row-div flex-row-div-between-center">
+
         <div class="social-links">
             <a href="https://vk.com/id513541072" target="_blank"><img src="images/free-icon-vk-5968835.png" alt="ВКонтакте"></a>
             <a href="https://web.telegram.org/a/" target="_blank"><img src="images/telegram.png" alt="Телеграм"></a>
             <a href="https://github.com/Irina06-os/web2024.github.io/tree/main" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         </div>
-        <p>&copy; сайт разработан Имя Фамилия. Все права защищены © 2023</p>
+        <p>Осипова Ирина Валерьевна</p>
+        <p>&copy; Все права защищены © 2024</p>
     </footer>
 
 </body>
