@@ -5,22 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header>
-
-
     <nav>
-        <ul>
-            <li><a href="index.html"><img src="images/lg!s8w.jpg" class="logo"> </a></li>
-            <li><a href="index.html">О себе</a></li>
-            <li><a href="summary.html">Резюме</a></li>
-            <li><a href="portfolio.html">Портфолио</a></li>
-            <li><a href="index.html#skills">Компетенции</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        <div class="navbar">  <!-- Обёртка для Flexbox -->
+            <a href="index.html" class="nav-flex-item nav-flex-item-logo">
+                <img src="images/lg!s8w.png" alt="Логотип" class="logo">
+            </a>
+            <ul class="nav-flex-items">
+                <li class="nav-flex-item"><a href="index.html">О себе</a></li>
+                <li class="nav-flex-item"><a href="summary.html">Резюме</a></li>
+                <li class="nav-flex-item"><a href="portfolio.html">Портфолио</a></li>
+                <li class="nav-flex-item"><a href="index.html#skills">Компетенции</a></li>
+                <li class="nav-flex-item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
-    <h1>Ирина</h1>
-    <p>Веб-разработчик/ должность</p>
-</header>
+    <header>
+        <h1 class="header-title">Веб-технологии</h1>
+        <h3 class="header-title">Осипова Ирина Валерьевна</h3>
+    </header>
     <main>
         <section>
             <h2>Опыт работы</h2>
@@ -57,15 +59,17 @@
         </section>
     </main>
 
-    <footer>
-        
+    <footer class="flex-row-div flex-row-div-between-center">
+
         <div class="social-links">
             <a href="https://vk.com/id513541072" target="_blank"><img src="images/free-icon-vk-5968835.png" alt="ВКонтакте"></a>
             <a href="https://web.telegram.org/a/" target="_blank"><img src="images/telegram.png" alt="Телеграм"></a>
             <a href="https://github.com/Irina06-os/web2024.github.io/tree/main" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         </div>
-        <p>&copy; сайт разработан Имя Фамилия. Все права защищены © 2023</p>
+        <p>Осипова Ирина Валерьевна</p>
+        <p>&copy; Все права защищены © 2024</p>
     </footer>
+
 
 </body>
 </html>

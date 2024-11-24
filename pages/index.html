@@ -28,45 +28,85 @@
     <div class="wrapper">
         <section class="about-me">
             <h1>О себе</h1>
-            <p>Пивет, меня зовут Ирина, я студент 2 курса бакалавариат учусь по направлению Бизнес-информатика в Университете Дубна.
-
-            </p>
-
+            <div class="content">  <!-- Контейнер для текста и изображений -->
+                <div class="text">
+                    <p>Привет, меня зовут Ирина, я студентка 2 курса бакалавриата, 
+                    учусь по направлению Бизнес-информатика в Университете Дубна. 
+                    Закончила художественную школу. На данный момент я хочу изучить программное обеспечение 1С.</p>
+                </div>
+                <div class="images">
+                    <img src="images/работа.jpg" alt="Работа">
+                    <img src="images/пейзаж.jpg" alt="Пейзаж">
+                </div>
+            </div>
         </section>
+    </div>
     </div>   
-    <div class="block-container dark-bg">
-        <section class="skills"><h1>Мои компетенции</h1></section>
+    <div class="block-container dark-bg" id="skills">
+        <section class="skills">
+            <h2>Мои компетенции</h2>
+            <div class="program">
+                <div class="program-item">
+                    <img src="images/figma.png" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="program-item">
+                    <img src="images/free-icon-photoshop-5968520.png" alt="Photoshop">
+                    <span>Photoshop</span>
+                </div>
+                <div class="program-item">
+                    <img src="images/icons8-тильда-100.png" alt="Tilda">
+                    <span>Tilda</span>
+                </div>
+                <div class="program-item">
+                    <img src="images/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="program-item">
+                    <img src="images/icons8-1c-160.png" alt="1C">
+                    <span>1C</span>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="wrapper">
       <article class="services">
         <h2>Услуги</h2>
         <section class="list">
             <div class="list1">
-                <h3>Название проекта 1</h3>
-                <p>Создала веб-сайт для компании "Название компании". Сайт выполнен на основе HTML, CSS, JavaScript, React.js.  Достигнут результат: увеличение конверсии на 15%.</p>
+                <ul>
+                    <li>Разработка веб-сайтов </li>
+                    <li>Создание веб-приложений </li>
+                    <li>Дизайн и верстка </li>
+                  </ul>
             </div>
 
             <div class="list1">
-                <h3>Название проекта 2</h3>
-                <p>Разработала веб-приложение для платформы "Название платформы".  Применяла технологии: Node.js, Express.js, MongoDB. Достигнут результат: увеличение производительности на 20%.</p>
+                <ul>
+                    <li>Веб-сайты для малого бизнеса.</li>
+                    <li>Дизайн логотипов и фирменного стиля</li>
+                    <li>Обучение и консультации</li>
+                  </ul>
             </div>
         </section>
 </div>
     <div class="block-container dark-bg2">
         <section class="portfolio"><h1>Заголовок</h1></section>
-        <form action="portfolio.html">  <!-- Замените на фактический путь к вашему портфолио -->
+        <p>Как большая языковая модель, мои достижения не измеряются традиционными способами.  Я не пишу книги или не создаю программное обеспечение в привычном понимании.  Однако, мои достижения впечатляют в своей масштабности и влиянии.</p>
+        <form action="portfolio.html">
             <button class="btn">Портфолио</button>
           </form>
     </div>
-        <footer class="flex-row-div flex-row-div-between-center">
-
+    <footer class="flex-row-div">
         <div class="social-links">
             <a href="https://vk.com/id513541072" target="_blank"><img src="images/free-icon-vk-5968835.png" alt="ВКонтакте"></a>
             <a href="https://web.telegram.org/a/" target="_blank"><img src="images/telegram.png" alt="Телеграм"></a>
             <a href="https://github.com/Irina06-os/web2024.github.io/tree/main" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         </div>
-        <p>Осипова Ирина Валерьевна</p>
-        <p>&copy; Все права защищены © 2024</p>
+        <div class="footer-text">
+            <p>Осипова Ирина Валерьевна</p>
+            <p>&copy; Все права защищены © 2024</p>
+        </div>
     </footer>
 
 </body>
