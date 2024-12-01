@@ -41,8 +41,8 @@ nav {
 }
 
 .nav-flex-item:hover {
-    background-color: #555;
-    color: #020202;
+    background-color: #17b3ad;
+    color: #1a2722;
     text-decoration: underline;
 }
 
@@ -86,14 +86,14 @@ nav {
 
 .dark-bg {
     text-align: center;
-    background-color: #1ac1a5; 
+    background-color: #054f42; 
     color: #ffffff;
     box-sizing: border-box;
 }
 
 .dark-bg2 {
     text-align: center;
-    background-color: #1ac1a5;
+    background-color: #054f42;
     color: #ffffff;
 }
 section {
@@ -128,7 +128,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     margin-top: 20px;
   }
   
@@ -149,26 +149,29 @@ section {
     text-align: center;
   }
 /*Услуги*/
+.services h2 {
+    text-align: center;
+  }
 .list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center; /* Центрирование по горизонтали */
 }
 
 .list1 {
     width: 300px;
-    margin: 10px;
+    margin: 10px auto; /* Автоматические отступы слева и справа */
     padding: 10px;
     text-align: center;
 }
-/*Копка*/
+/*Кнопка*/
 .portfolio {
     padding-bottom: 30px; /* Добавлен отступ снизу */
     margin-bottom: 20px; /* Удалите или измените это свойство */
   }
   
   .btn {
-    background-color: #4CAF50; 
+    background-color: #238773; 
     border: none;              /* Удаление границы */
     color: white;             /* Белый цвет текста */
     padding: 15px 32px;        /* Отступы внутри кнопки */
@@ -182,7 +185,7 @@ section {
   }
   
   .btn:hover {
-    background-color: #3e8e41; 
+    background-color: #1a704c; 
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24); 
   }
 main {
@@ -281,4 +284,60 @@ main {
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/antic-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /*Резюме*/
+    #experience-section {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center;    /*Centers vertically, if you need it*/
+    
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    
+    th {
+        background-color: #f2f2f2; /* Цвет заголовков таблицы */
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9; /* Цвет чётных строк */
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: white; /* Цвет нечётных строк */
+    }
+    /*Портфолио*/
+    .achievement {
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+    
+    .achievement h2 {
+        margin-top: 0;
+    }
+    .inner-achievement {
+        display: flex;
+        gap: 20px; /* Space between image and text */
+    }
+    
+    .inner-achievement img {
+        max-width: 100px; /* Adjust as needed */
+        height: auto;
+        order: 1; /* Place image to the right */
+    }
+    
+    .inner-achievement .text-content {
+        order: 0; /* Place text to the left*/
+        flex: 1; /* Allow text to occupy the remaining space*/
+    
     }
