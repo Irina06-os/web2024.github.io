@@ -10,25 +10,24 @@ header {
     background-image: url(../images/шапка.jpg);
     height: 200px;
     background-repeat: no-repeat;
-    background-size: cover; /* Покрывает всю область */
-    background-position: center; /* Центрирует изображение */
-    padding: 100px 0; /* Отступ сверху и снизу */
-    background-color: #f0f0f0; /* Необязательно, если изображение полностью покрывает область */
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px 0; 
+    background-color: #f0f0f0; 
     color: #ffffff;
 }
 /*Меню*/
 nav {
-    background-color: #fff; /* белый фон */
+    background-color: #fff;
     padding: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .navbar {
     display: flex;
-    justify-content: space-around; /* Расположение элементов */
+    justify-content: space-around;
     align-items: center;
-    background-color: #ffffff; /* Цвет фона меню */
+    background-color: #ffffff;
     padding: 10px 20px;
 }
 
@@ -40,16 +39,18 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-flex-item:hover {
+.nav-flex-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-flex-item:not(.nav-flex-item-logo) a:hover { /* Применяем стили hover к ссылкам, кроме логотипа */
     background-color: #17b3ad;
     color: #1a2722;
     text-decoration: underline;
 }
 
-.nav-flex-item a {
-    text-decoration: none;
-    color: inherit;
-}
 
 .nav-flex-item-logo {
     padding: 0;
@@ -102,25 +103,25 @@ section {
 }
 .about-me .content {
     display: flex;
-    justify-content: space-between; /* Распределяет текст и изображения по краям */
-    align-items: flex-start; /* Выравнивание по вертикали (вверху) */
+    justify-content: space-between; 
+    align-items: flex-start; 
     margin-top: 20px;
 }
 
 .about-me .text {
-    flex: 1; /* Текст занимает оставшееся пространство */
+    flex: 1; 
 }
 
 .about-me .images {
     display: flex;
-    flex-direction: column; /* Изображения друг под другом */
-    gap: 10px;              /* Отступ между изображениями */
-    max-width: 200px;  /* Максимальная ширина блока с изображениями */
+    flex-direction: column; 
+    gap: 10px;              
+    max-width: 200px;  
 }
 
 .about-me .images img {
-    max-width: 100%; /* Изображения не выходят за пределы контейнера */
-    height: auto;    /* Сохраняется пропорция */
+    max-width: 100%; 
+    height: auto;    
 }
 
 /*Иконки*/
@@ -155,30 +156,30 @@ section {
 .list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Центрирование по горизонтали */
+    justify-content: center;
     gap: 10px; 
 }
 
 .list1 {
     width: 300px;
-    margin: 0; /* Автоматические отступы слева и справа */
+    margin: 0; 
     padding: 10px;
     text-align: center;
 }
 /*Кнопка*/
 .portfolio {
-    padding-bottom: 30px; /* Добавлен отступ снизу */
-    margin-bottom: 20px; /* Удалите или измените это свойство */
+    padding-bottom: 30px;
+    margin-bottom: 20px; 
   }
   
   .btn {
     background-color: #238773; 
-    border: none;              /* Удаление границы */
-    color: white;             /* Белый цвет текста */
-    padding: 15px 32px;        /* Отступы внутри кнопки */
+    border: none;              
+    color: white;             
+    padding: 15px 32px;        
     text-align: center;      
     text-decoration: none;    
-    display: inline-block;     /* Кнопка как блочный элемент */
+    display: inline-block;     
     font-size: 16px;       
     border-radius: 8px;     
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
@@ -190,8 +191,8 @@ section {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24); 
   }
 main {
-    display: inline-block; /* Изменение: Inline-block */
-    vertical-align: top; /* Выравниваем по верху */
+    display: inline-block; 
+    vertical-align: top; 
     padding: 20px;
 }
 .portfolio-gallery {
@@ -276,7 +277,7 @@ main {
   }
   
   .social-links img {
-    width: 30px; /* Уменьшен размер иконок */
+    width: 30px; 
     height: auto;
   }
   @font-face {
@@ -302,15 +303,15 @@ main {
     th, td {
         padding: 10px;
         text-align: left;
-        border: 1px solid #ddd;
+        border: 1px solid #05f0cc;
     }
     
     th {
-        background-color: #f2f2f2; /* Цвет заголовков таблицы */
+        background-color: #f2f2f2; 
     }
     
     tbody tr:nth-child(even) {
-        background-color: #f9f9f9; /* Цвет чётных строк */
+        background-color: #04ebc5; /* Цвет чётных строк */
     }
     
     tbody tr:nth-child(odd) {
@@ -319,28 +320,38 @@ main {
     /*Портфолио*/
     .achievement {
         margin-bottom: 30px;
-        border: 1px solid #ccc;
+        border: 1px solid #0aecbb;
         padding: 20px;
     }
     
     .achievement h2 {
         margin-top: 0;
     }
+    
     .inner-achievement {
         display: flex;
         gap: 20px;
+        align-items: flex-start;
     }
     
     .inner-achievement img {
-        max-width: 200px; 
+        max-width: 200px;
         height: auto;
-        order: 1; /
+        order: 1;
     }
     
     .inner-achievement .text-content {
         order: 0; 
-        flex: 1; 
+        flex: 1;
+    }
     
+    
+    .achievement:nth-child(even) .inner-achievement img {
+        order: 0; 
+    }
+    
+    .achievement:nth-child(even) .inner-achievement .text-content {
+      order: 1; 
     }
     /*Контакты*/
     .box {
